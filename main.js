@@ -21,7 +21,10 @@ console.log('cars alphabetical:' , alpha);
 
 const pets = ['dog', 'cat', 'fish', 'rabbit', 'snake', 'lizard', 'bird'];
 
-let removedReptiles = pets.splice(4,5,'hamster');
+
+let removedReptiles = pets.splice(4,2,'hamster');
+console.log('removed reps:', removedReptiles);
+console.log('spliced pets:',pets);
 
 let removedPet = pets.pop();
 
