@@ -35,12 +35,11 @@ let firstPet = pets.shift();
 pets.unshift('turtle');
 
 const numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34];
-
+console.log('numbers array:', numbers)
 function addTwo(num){
   return num + 2
 }
+let array2 = [];
+numbers.forEach(num => array2.push(addTwo(num)));
+console.log('array2:', array2)
 
-numbers.forEach((num, index) => {
-    numbers[index] = addTwo(num)});
-
-console.log('added 2:' , numbers);
